@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: url('event.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .service {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            width: 300px;
+            text-align: center;
+        }
+        .service h3 {
+            margin-bottom: 1rem;
+        }
+        .service p {
+            color: #666;
+        }
+        .gallery {
+            padding: 2rem;
+            background: #fff;
+        }
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 0.5rem;
+            display: inline-block;
+        }
+        .contact-form {
+            background: #f9f9f9;
+            padding: 2rem;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .contact-form form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Event Management Service</h1>
+    </header>
+    <nav>
+       	<a href="#Home">Home</a>
+	<a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Plan Your Perfect Event</h1>
+        <p>We make every moment unforgettable.</p>
+    </div>
+    <section id="services" class="services">
+        <div class="service">
+            <h3>Weddings</h3>
+            <p>We create the wedding of your dreams with attention to every detail.</p>
+        </div>
+        <div class="service">
+            <h3>Corporate Events</h3>
+            <p>Professional and seamless corporate event planning services.</p>
+        </div>
+        <div class="service">
+            <h3>Private Parties</h3>
+            <p>Celebrate your special moments with our custom party solutions.</p>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Event Gallery</h2>
+        <img src="img1.JPG" alt="Event 1">
+        <img src="img2.JPG" alt="Event 2">
+        <img src="img3.JPG" alt="Event 3">
+	<img src="img4.JPG" alt="Event 4">
+	<img src="img5.JPG" alt="Event 5">
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Event Planners.CO | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
